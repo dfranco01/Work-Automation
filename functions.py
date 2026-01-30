@@ -1,8 +1,10 @@
 import pandas as pd
 import random
+from datetime import datetime, timedelta
+
+df = pd.read_excel('log.xlsx')
 
 def initialize():
-    df = pd.read_excel('log.xlsx')
     for i in range(len(df["PERNR NUMBER"])):
         num = ""
         for j in range(6):
@@ -17,13 +19,25 @@ def input_check(user_input):
     return user_input
 
 def employees_due():
-    pass
+    today = datetime.today()
+    benchmark = timedelta(days = 365)
+    due = df.loc[["DATE AGREEMENT SIGNED" <= (today - benchmark) ]]
+    return due
 
 def ninety_days_out():
-    pass
+    today = datetime.today()
+    benchmark = timedelta(days = 365)
+    due = df.loc[["DATE AGREEMENT SIGNED" <= (today - benchmark) ]]
+    return due
 
 def sixty_days_out():
-    pass
+    today = datetime.today()
+    benchmark = timedelta(days = 365)
+    due = df.loc[["DATE AGREEMENT SIGNED" <= (today - benchmark) ]]
+    return due
 
 def thirty_days_out():
-    pass
+    today = datetime.today()
+    benchmark = timedelta(days = 365)
+    due = df.loc[["DATE AGREEMENT SIGNED" <= (today - benchmark) ]]
+    return due

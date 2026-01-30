@@ -9,25 +9,29 @@ def main():
     while(True):
         match choice.upper():
             case "A":
-                functions.employees_due()
+                df = functions.employees_due()
+                print(df.head())
                 continue_working = input("Continue working? Enter a for yes, any other input will exit the program: ")
                 if continue_working.upper() == "A":
                     continue
                 break
             case "B":
-                functions.thirty_days_out()
+                df = functions.thirty_days_out()
+                print(df.head())
                 continue_working = input("Continue working? Enter a for yes, any other input will exit the program: ")
                 if continue_working.upper() == "A":
                     continue
                 break
             case "C":
-                functions.sixty_days_out()
+                df = functions.sixty_days_out()
+                print(df.head())
                 continue_working = input("Continue working? Enter a for yes, any other input will exit the program: ")
                 if continue_working.upper() == "A":
                     continue
                 break
             case "D":
-                functions.ninety_days_out()
+                df = functions.ninety_days_out()
+                print(df.head())
                 continue_working = input("Continue working? Enter a for yes, any other input will exit the program: ")
                 if continue_working.upper() == "A":
                     continue
