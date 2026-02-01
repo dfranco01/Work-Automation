@@ -13,6 +13,7 @@
 - the importance of data cleaning (it stalled my progress considerably)
 - Python Faker fundamentals
 - working with datetime in Python
+- user the head or tails methods on the dataframe to see as much data as desired!
 
 ## demo 📷
 This video shows exporting to excel files, displaying data, and user input validation
