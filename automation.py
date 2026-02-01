@@ -14,10 +14,10 @@ def main():
             case "A":
                 df = functions.employees_due()
                 print(df.head(10))
-                export = input("Export table into Excel file? Enter a for yes, any other key will imply no.")
+                export = input("Export table into Excel file? Enter a for yes, any other key will imply no: ")
                 if export.upper() == "A":
                     print("Exported! Note: you'll have to expand the columns to see the data properly")
-                    df.to_excel("output.xlsx")
+                    df.to_excel("Expired.xlsx")
                 continue_working = input("View other tables? Enter a for yes, any other input will exit the program: ")
                 if continue_working.upper() == "A":
                     continue
@@ -25,10 +25,10 @@ def main():
             case "B":
                 df = functions.thirty_days_out()
                 print(df.head(10))
-                export = input("Export table into Excel file? Enter a for yes, any other key will imply no.")
+                export = input("Export table into Excel file? Enter a for yes, any other key will imply no: ")
                 if export.upper() == "A":
                     print("Exported! Note: you'll have to expand the columns to see the data properly")
-                    df.to_excel("output.xlsx")
+                    df.to_excel("thirty.xlsx")
                 continue_working = input("View other tables? Enter a for yes, any other input will exit the program: ")
                 if continue_working.upper() == "A":
                     continue
@@ -36,10 +36,10 @@ def main():
             case "C":
                 df = functions.sixty_days_out()
                 print(df.head(10))
-                export = input("Export table into Excel file? Enter a for yes, any other key will imply no.")
+                export = input("Export table into Excel file? Enter a for yes, any other key will imply no: ")
                 if export.upper() == "A":
                     print("Exported! Note: you'll have to expand the columns to see the data properly")
-                    df.to_excel("output.xlsx")
+                    df.to_excel("sixty.xlsx")
                 continue_working = input("View other tables? Enter a for yes, any other input will exit the program: ")
                 if continue_working.upper() == "A":
                     continue
@@ -47,10 +47,10 @@ def main():
             case "D":
                 df = functions.ninety_days_out()
                 print(df.head(10))
-                export = input("Export table into Excel file? Enter a for yes, any other key will imply no.")
+                export = input("Export table into Excel file? Enter a for yes, any other key will imply no: ")
                 if export.upper() == "A":
                     print("Exported! Note: you'll have to expand the columns to see the data properly")
-                    df.to_excel("output.xlsx")
+                    df.to_excel("ninety.xlsx")
                 continue_working = input("View other tables? Enter a for yes, any other input will exit the program: ")
                 if continue_working.upper() == "A":
                     continue

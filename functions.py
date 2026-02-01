@@ -1,8 +1,10 @@
 import pandas as pd
 import random
 from datetime import datetime, timedelta
+from faker import Faker
 
 df = pd.read_excel('log.xlsx')
+faker = Faker()
 
 def initialize():
     for i in range(len(df["PERNR NUMBER"])):
@@ -11,8 +13,15 @@ def initialize():
             digit = str(random.randint(1, 9))
             num += digit
         df.loc[i, "PERNR NUMBER"] = float(num)
+    
+    for i in range(len(df)):
+        df["EMPLOYEE LAST NAME"] = faker.name()
+        df["EMPLOYEE FIRST NAME"] = faker.name()
+        df["SUPERVISOR"] = faker.name()
+
     df["PERNR NUMBER"] = df["PERNR NUMBER"].astype(int)
     #Basic data cleaning, in real life, PERNR numbers are all unique to the individual
+    #I also ensure dates are also in the correct format prior to use
     df["DATE AGREEMENT SIGNED"] = pd.to_datetime(df["DATE AGREEMENT SIGNED"], format='mixed')
     df.dropna(subset=["DATE AGREEMENT SIGNED"], inplace=True)
     df.drop_duplicates(inplace=True)
