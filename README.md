@@ -20,7 +20,7 @@ This video shows exporting to excel files, displaying data, and user input valid
 [demo](https://github.com/dfranco01/Work-Automation/blob/main/demo/Screen%20Recording%202026-01-31%20212411.mp4)
 
 ## Ways this project could be impproved 🔍
-- Have unique fake names be generated
+- Have unique fake names be generated, currently, Python Faker generates the same name. This does not affect the program's logic, as only the date and PERNR number columns are important, but it would be nice to have unique names.
 
 ## Contributing 🤝
 Feel free to open issues, submit Pull Requests, or suggest improvements!
