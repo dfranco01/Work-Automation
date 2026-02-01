@@ -1,6 +1,6 @@
 # Employee Tracker Helper! 🚀
 
-## See which employees are due for an user agreement signature, as well as who is upcoming. 📝
+## See which employees are due for a user agreement signature, as well as who is upcoming. 📝
 
 ## Tools used 🔨
 - Python
@@ -13,7 +13,7 @@
 - the importance of data cleaning (it stalled my progress considerably)
 - Python Faker fundamentals
 - working with datetime in Python
-- user the head or tails methods on the dataframe to see as much data as desired!
+- use the head or tails methods on the dataframe to see as much data as desired!
 
 ## demo 📷
 This video shows exporting to excel files, displaying data, and user input validation
