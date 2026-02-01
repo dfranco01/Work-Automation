@@ -11,6 +11,7 @@
 ## demo 📷
 This video shows exporting to excel files, displaying data, and user input validation
 
+[demo](https://github.com/dfranco01/Work-Automation/blob/main/demo/Screen%20Recording%202026-01-31%20212411.mp4)
 
 ## Ways this project could be impproved 🔍
 - Have unique fake names be generated
